@@ -1,21 +1,3 @@
-#!/usr/bin/env python3
-"""
-Run vLLM generation with optional MoE expert logging.
-
-This script runs the Qwen1.5-MoE model on GSM8K prompts and optionally
-logs the expert routing decisions for analysis.
-
-Usage:
-    # Run without logging (baseline):
-    python run_generate.py
-    
-    # Run with logging:
-    VLLM_LOG_MOE=moe_routes.jsonl python run_generate.py
-    
-    # Run with logging (alternative):
-    python run_generate.py --log
-"""
-
 import os
 import sys
 import json
